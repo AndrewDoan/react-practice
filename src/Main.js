@@ -15,6 +15,7 @@ export default class Main extends Component {
 
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
+    this.setState({value: ''}); // clearing the state after submit
     event.preventDefault();
   }
 
